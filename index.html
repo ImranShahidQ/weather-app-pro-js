@@ -5,21 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Weather Pro</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="app">
 
-    <h1>🌤 Weather</h1>
+    <div class="top">
+        <h2>Weather</h2>
+        <button onclick="toggleTheme()">🌙</button>
+    </div>
 
     <div class="search">
         <input type="text" id="cityInput" placeholder="Search city...">
         <button onclick="getWeather()">Search</button>
+        <button onclick="getLocationWeather()">📍</button>
     </div>
 
-    <div id="weatherBox" class="weather-card"></div>
+    <div id="currentWeather"></div>
+
+    <div id="forecast" class="forecast"></div>
 
 </div>
 
