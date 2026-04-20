@@ -1,76 +1,61 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
 body {
-    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    height: 100vh;
 }
 
-/* App Card */
+/* App */
 .app {
+    width: 380px;
     background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(15px);
-    padding: 30px;
-    border-radius: 20px;
-    width: 320px;
-    text-align: center;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 16px;
     color: white;
+}
+
+/* Top */
+.top {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Search */
 .search {
     display: flex;
-    gap: 10px;
-    margin: 20px 0;
+    gap: 5px;
+    margin: 15px 0;
 }
 
 .search input {
     flex: 1;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 8px;
+    border-radius: 6px;
     border: none;
 }
 
 .search button {
-    padding: 10px;
-    border-radius: 8px;
+    padding: 8px;
+    border-radius: 6px;
     border: none;
     background: white;
     color: #4f46e5;
-    cursor: pointer;
 }
 
-/* Weather Card */
-.weather-card {
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 16px;
-    background: rgba(255,255,255,0.15);
-}
-
-/* Temperature */
-.temp {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-/* City */
-.city {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-/* Extra Info */
-.details {
+/* Forecast */
+.forecast {
     display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-    font-size: 14px;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 80px;
+    text-align: center;
 }
