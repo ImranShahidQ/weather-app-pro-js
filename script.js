@@ -75,4 +75,19 @@ async function fetchForecast(lat, lon) {
 // Dark mode
 function toggleTheme() {
     document.body.classList.toggle("dark");
+
+    const btn = document.getElementById("themeBtn");
+
+    if (document.body.classList.contains("dark")) {
+        btn.textContent = "☀️";
+        localStorage.setItem("theme", "dark");
+    } else {
+        btn.textContent = "🌙";
+        localStorage.setItem("theme", "light");
+    }
+}
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    document.getElementById("themeBtn").textContent = "☀️";
 }
