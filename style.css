@@ -59,3 +59,30 @@ body {
     min-width: 80px;
     text-align: center;
 }
+
+/* DARK MODE */
+body.dark {
+    background: linear-gradient(135deg, #111827, #1f2937);
+}
+
+/* App in dark */
+body.dark .app {
+    background: rgba(0,0,0,0.4);
+    color: #f9fafb;
+}
+
+/* Inputs */
+body.dark input {
+    background: #1f2937;
+    color: white;
+}
+
+body.dark .search button {
+    background: #374151;
+    color: white;
+}
+
+/* Cards */
+body.dark .card {
+    background: rgba(255,255,255,0.1);
+}
